@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="emiteAlerta()" 
+    >Clique aqui </button>
+
+
+    <h1 onmouseleave="emiterError()"
+        onmouseover="emiteMouse()"
+        onclick="h1()"
+      
+    >Emite error</h1>
+
+    <p>
+        <input type="number" 
+        onkeyup="calculatabuada(this.value)">
+    </p>
+  
+    <div id="tabuada" >
+        
+    </div>
+
+
+
+    <script type="text/javascript">
+        const nome = "Lorenzo";
+        const sobrenome = "simoes vargas";
+        console.log (nome +" "+ sobrenome)
+
+       function emiteAlerta() {
+            alert('Você clicou em um botão');
+            console.log ("a função emiteAlerta foi acionada");
+            console.error("mensagens de erro");
+            console.warn("um erro que não é grave");
+            console.info("para informação");
+            // console.table([555,222,555]);
+        }
+
+        const emiterError = function () {
+            console.warn("isso é uma função em uma variável"); // para acionar no devtools
+        }
+
+        const emiteMouse = function () {
+            console.warn("isso é a função do mmouse")
+        }
+
+        //Pegando elementos via JS
+
+         const h1 = function() {    
+        const h1 = document.querySelector('h1'); 
+      
+        h1.innerHTML = "Gremio";
+        }
+
+        const calculatabuada = function (valor) {
+            const tabuada = document.querySelector("#tabuada");
+            tabuada.innerHTML = "";
+            for(i=0; i<=10; i++) {
+                tabuada.innerHTML += `<p>${i} x ${valor} = ${i*valor} </p>`; 
+            }
+
+
+
+            
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>
