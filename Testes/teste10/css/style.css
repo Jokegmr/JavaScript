@@ -1,0 +1,125 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo da página */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container inicial */
+.inicio {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.inicio h1 {
+    font-size: 2.8rem;
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.inicio p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.lista {
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+    list-style-type: decimal;
+    color: #7f8c8d;
+    font-size: 1rem;
+}
+
+/* Formulário */
+.meio {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.form p {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f3f3f3;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db;
+    background-color: #fff;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Resultado */
+.resultado {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ecf6fd;
+    border-radius: 8px;
+    border: 1px solid #aed6f1;
+    font-size: 1.1rem;
+    color: #2980b9;
+    display: none; /* Inicialmente invisível */
+    font-weight: 500;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animação do resultado */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

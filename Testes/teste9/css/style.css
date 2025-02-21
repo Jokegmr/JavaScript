@@ -1,0 +1,16 @@
+.comeco{
+    min-width: 300px;
+    min-height: 200px;
+    width: 100%;
+    height: auto;
+    background-color: lightgray;
+    border-radius: 8px;
+    border: 1px solid black;
+    padding: 10px;
+    color: red;
+    text-align: center;
+    font-size: larger;
+    font-family: monospace;
+}
+
+
